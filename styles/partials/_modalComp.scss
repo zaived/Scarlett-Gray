@@ -1,0 +1,63 @@
+.modal-wrapper {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  z-index: 1000;
+  width: 80vh;
+  height: 80vh;
+  color: #fff;
+  border-radius: 2%;
+  .exit-btn {
+    border-bottom: 2px solid rgb(255, 253, 253);
+    text-align: center;
+    h1 {
+      display: inline-block;
+      font-family: "helvetica-blackregular";
+      animation: blink ease infinite;
+      animation-duration: 2s;
+      cursor: pointer;
+    }
+  }
+  .bio {
+    padding: 0px 10%;
+    margin-top: 5%;
+    p {
+      line-height: 2em;
+    }
+  }
+}
+
+.red {
+  a {
+    text-decoration: none;
+    color: red;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+}
+
+// .backdrop {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   background: #000000e1;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

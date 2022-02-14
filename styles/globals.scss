@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "helvetica-blackregular";
+  src: url("fonts/helvetica_black-webfont.woff2") format("woff2"),
+    url("fonts/helvetica_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaregular";
+  src: url("fonts/helvetica-webfont.woff2") format("woff2"),
+    url("fonts/helvetica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "helveticaregular", sans-serif;
+}
+
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/modalButtons";
+@import "./partials/modalComp";
+@import "./partials/slider.scss";

@@ -1,0 +1,53 @@
+.h-container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      font-family: "helvetica-blackregular", sans-serif;
+      display: flex;
+      .h-name {
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.clock {
+  position: fixed;
+  right: 2%;
+  font-family: "helvetica-blackregular", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .h-container {
+    flex-direction: column;
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .clock {
+    position: inherit;
+    text-align: center;
+    right: 0%;
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 365px) {
+  .h-container {
+    ul {
+      li {
+        .h-name {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
