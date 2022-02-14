@@ -3,27 +3,14 @@ const Footer = () => {
     <div className="f-container">
       <div className="scroll-right">
         <p>
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE” “DIRECTION"
-          “EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE”
-          “DIRECTION"“EXECUTIVE” “CREATIVE” “DIRECTION” “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION" “EXECUTIVE” “CREATIVE” “DIRECTION" “EXECUTIVE” “CREATIVE”
-          “DIRECTION"
+          Creative Director - Artist - Hockey Player Creative Director - Artist
+          - Hockey Player Creative Director - Artist - Hockey Player Creative
+          Director - Artist - Hockey Player Creative Director - Artist - Hockey
+          Player Creative Director - Artist - Hockey Player Creative Director -
+          Artist - Hockey Player Creative Director - Artist - Hockey Player
+          Creative Director - Artist - Hockey Player Creative Director - Artist
+          - Hockey Player Creative Director - Artist - Hockey Player Creative
+          Director - Artist - Hockey Player
         </p>
       </div>
     </div>
