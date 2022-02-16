@@ -69,7 +69,7 @@ const ModalButtons = () => {
         className="item"
       >
         <Image src={Guy} alt="GuySign" width={200} />
-        <h3>ABOUT</h3>
+        <h3>STORY</h3>
       </motion.div>
 
       <div
@@ -77,11 +77,11 @@ const ModalButtons = () => {
         // onClick={() => setCurrentModalId('shop')}
       >
         <Image src={Cart} alt="GuySign" width={200} />
-        <h3>SHOP</h3>
+        <h3>EXPRESSION</h3>
       </div>
       <div className="item" onClick={() => setCurrentModalId("contact")}>
         <Image src={Phone} alt="GuySign" width={200} />
-        <h3>CONTACT</h3>
+        <h3>ADVERTISING</h3>
       </div>
 
       <AnimatePresence initial={false} exitBeforeEnter={true}>

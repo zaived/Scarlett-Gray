@@ -38,45 +38,34 @@ const AboutModal = ({ handleClose }) => {
         </div>
         <div className="a-modal">
           <div className="bio">
+            <h1>SCARLETT - The Story</h1> <br />
             <p>
-              A NATIVE SAN FRANCISCAN EXECUTIVE CREATIVE DIRECTOR, WRITING MY
-              HEART OUT SINCE 2009.... <br />
-              <br /> currently executive creative director at
-              <span className="red">
-                <Link href="#">
-                  <a target="_blank"> grey nyc</a>
-                </Link>
-              </span>
-              .<br /> ADWEEK
-              <span className="red">
-                <Link href="#">
-                  <a target="_blank"> Creative Top 100 21</a>
-                </Link>
-              </span>
+              Freelance Creative Director & Artist & DEI advocate <br />
+              Scarlett Rose Gray <br />
+              is currently living ❝the traditional narrative usually involving
+              supernatural or imaginary <br /> persons and embodying popular
+              ideas on natural or social phenomena❞ <br />
+              Key Character - Scarlett : Creative Director - Artist - Hockey
+              Player <br />
+              storyline : Enter Scarlett born to a blonde actress and a Lebanese
+              Prince. She did the <br /> better part of her growing up in a
+              small beach town on the west cost called Carmel - by - <br /> the
+              - Sea. Left the Beach town for the Desert (amman, jordan). <br />
+              Over her career, she moved from the Desert of Jordan to Portugal,
+              to the big Apple to <br /> the city of love to amsterdam, before
+              finally landing back in Brooklyn, building brands <br /> and
+              creative campaigns for the likes of Nike, Verizon, Zalando, the
+              NBA and Child & <br /> Youth Finance International. <br />
+              approach: I create ideas that translate globally. <br />
+              Marketing today exists on a global scale. This makes translation
+              the biggest hurdle to <br /> creative ideas. Not translation in
+              terms of language, but translation in terms of culture. <br />
+              Across sub-cultures, across National cultures, across verticals.
               <br />
-              <br />
-              <br /> let’s try to tell stories that move people and make people
-              think, whether that's through a 30s spot, a documentary on YT or a
-              tea cup. where a story is told is less important than why or how.
-              ads should be fun. because we are talking to people and people
-              will always surprise you. <br /> <br /> Say hello at
-              <span className="red">
-                <Link href="#">
-                  <a> andrewritescopy@gmail.com</a>
-                </Link>
-              </span>
-              <br />
-              <span className="red">
-                <Link href="#">
-                  <a target="_blank"> /andreggray </a>
-                </Link>
-              </span>
-              +
-              <span className="red">
-                <Link href="#">
-                  <a target="_blank"> @andregray </a>
-                </Link>
-              </span>
+              My superpower is making sure that the way the idea was conceived
+              in the culture it was <br /> conceived in, is received in the same
+              way as it bounces around the internet and is <br /> moved from
+              global to local.
             </p>
           </div>
         </div>
