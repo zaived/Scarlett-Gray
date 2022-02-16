@@ -4,6 +4,8 @@ import Guy from "../public/assets/icons/guy.gif";
 import Cart from "../public/assets/icons/cart.gif";
 import Phone from "../public/assets/icons/phone.gif";
 import AboutModal from "./Modals/AboutModal";
+import ContactModal from "./Modals/ContactModal";
+import ShopModal from "./Modals/ShopModal";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ModalButtons = () => {
@@ -18,6 +20,14 @@ const ModalButtons = () => {
     {
       id: "about",
       modalContent: <AboutModal />,
+    },
+    {
+      id: "shop",
+      modalContent: <ShopModal />,
+    },
+    {
+      id: "contact",
+      modalContent: <ContactModal />,
     },
   ];
 
@@ -47,9 +57,9 @@ const ModalButtons = () => {
         console.log("currentModalId is about");
         return <AboutModal handleClose={() => close()} />;
       } else if (currentModalId === "contact") {
-        return <ContactModal />;
+        return <ContactModal handleClose={() => close()} />;
       } else if (currentModalId === "shop") {
-        return <ShopModal />;
+        return <ShopModal handleClose={() => close()} />;
       } else {
         console.log("no id defined", currentModalId);
         return null;
@@ -79,9 +89,31 @@ const ModalButtons = () => {
         <Image src={Cart} alt="GuySign" width={200} />
         <h3>EXPRESSION</h3>
       </div>
-      <div className="item" onClick={() => setCurrentModalId("contact")}>
+      <div className="item">
         <Image src={Phone} alt="GuySign" width={200} />
         <h3>ADVERTISING</h3>
+      </div>
+
+      <div
+        className="item"
+        onClick={() => {
+          setCurrentModalId("shop");
+          open();
+        }}
+      >
+        <Image src={Phone} alt="GuySign" width={200} />
+        <h3>SHOP</h3>
+      </div>
+
+      <div
+        className="item"
+        onClick={() => {
+          setCurrentModalId("contact");
+          open();
+        }}
+      >
+        <Image src={Phone} alt="GuySign" width={200} />
+        <h3>CONTACT</h3>
       </div>
 
       <AnimatePresence initial={false} exitBeforeEnter={true}>
