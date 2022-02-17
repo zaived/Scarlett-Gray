@@ -1,4 +1,5 @@
 import Clock from "react-live-clock";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -6,7 +7,11 @@ const Header = () => {
       <header>
         <ul>
           <li>
-            <h1 className="h-name">Scarlett Gray</h1>
+            <Link href="/">
+              <a>
+                <h1 className="h-name">Scarlett Gray</h1>
+              </a>
+            </Link>
           </li>
         </ul>
       </header>

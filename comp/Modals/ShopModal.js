@@ -36,6 +36,7 @@ const ShopModal = ({ handleClose }) => {
         <div className="exit-btn">
           <h1 onClick={handleClose}>EXIT</h1>
         </div>
+        <h1>SHOP MODAL</h1>
       </motion.div>
     </Backdrop>
   );

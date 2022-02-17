@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Guy from "../public/assets/icons/guy.gif";
 import Cart from "../public/assets/icons/cart.gif";
@@ -42,10 +43,7 @@ const ModalButtons = () => {
             setCurrrentModalId(id);
             open();
           }}
-        >
-          <Image />
-          <h3></h3>
-        </div>
+        ></div>
       );
     });
   }
@@ -82,12 +80,13 @@ const ModalButtons = () => {
         <h3>STORY</h3>
       </motion.div>
 
-      <div
-        className="item"
-        // onClick={() => setCurrentModalId('shop')}
-      >
-        <Image src={Cart} alt="GuySign" width={200} />
-        <h3>EXPRESSION</h3>
+      <div className="item">
+        <Link href="/ArtisticExpression">
+          <a>
+            <Image src={Cart} alt="GuySign" width={200} />
+            <h3>EXPRESSION</h3>
+          </a>
+        </Link>
       </div>
       <div className="item">
         <Image src={Phone} alt="GuySign" width={200} />

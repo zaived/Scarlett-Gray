@@ -36,6 +36,7 @@ const ContactModal = ({ handleClose }) => {
         <div className="exit-btn">
           <h1 onClick={handleClose}>EXIT</h1>
         </div>
+        <h1>CONTACT MODAL</h1>
       </motion.div>
     </Backdrop>
   );
