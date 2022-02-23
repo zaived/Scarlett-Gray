@@ -1,13 +1,16 @@
 import Image from "next/image";
 
 export default function ExpressionGrid({ expression }) {
-  const { featuredwork } = expression.fields;
+  // const {} = expression.fields;
+
+  console.log(expression);
+
   return (
     <div className="card">
       <Image
-        src={"https:" + featuredwork.fields.file.url}
-        width={featuredwork.fields.file.details.image.width}
-        height={featuredwork.fields.file.details.image.height}
+        src={"https:" + expression.fields.file.url}
+        width={200}
+        height={200}
       />
     </div>
   );

@@ -31,7 +31,7 @@ export default function ArtisticExpression({ expressions }) {
         </div>
       </header>
       <div className="expression-gallery">
-        {expressions.map((expression) => (
+        {expressions[0].fields.featuredwork.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
         ))}
       </div>
