@@ -22,6 +22,7 @@
     "react-moment": "^1.1.1",
     "react-slick": "^0.28.1",
     "sass": "^1.49.0",
+    "simple-react-lightbox": "^3.6.9-0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

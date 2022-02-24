@@ -30,6 +30,19 @@ a {
   color: #000;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eae4dd;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
+
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/modalButtons";

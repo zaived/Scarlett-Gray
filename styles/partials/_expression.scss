@@ -1,8 +1,27 @@
 .e-header {
-  margin-top: 2%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   display: flex;
   justify-content: center;
   .text-h {
     text-align: center;
+  }
+}
+
+.expression-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin-bottom: 10%;
+  padding: 0% 20%;
+}
+
+.card {
+  .grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
   }
 }
