@@ -24,12 +24,12 @@ export default function ArtisticExpression({ expressions }) {
   console.log(expressions);
   return (
     <div>
-      <header className="e-header">
+      {/* <header className="e-header">
         <div className="text-h">
           <h1>MY ARTISTIC EXPRESSION</h1>
           <h2>all this art has been created with my own hands</h2>
         </div>
-      </header>
+      </header> */}
       <div className="expression-gallery">
         {expressions[0].fields.featuredwork.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
