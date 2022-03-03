@@ -1,4 +1,5 @@
 import { createClient } from "contentful";
+import VideoExpressionGrid from "../comp/VideoExpressionGrid";
 import ExpressionGrid from "../comp/ExpressionGrid";
 
 export async function getStaticProps() {
@@ -24,12 +25,9 @@ export default function ArtisticExpression({ expressions }) {
   console.log(expressions);
   return (
     <div>
-      {/* <header className="e-header">
-        <div className="text-h">
-          <h1>MY ARTISTIC EXPRESSION</h1>
-          <h2>all this art has been created with my own hands</h2>
-        </div>
-      </header> */}
+      <div className="expression-videos">
+        <VideoExpressionGrid />
+      </div>
       <div className="expression-gallery">
         {expressions[0].fields.featuredwork.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
