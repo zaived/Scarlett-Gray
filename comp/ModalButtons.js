@@ -93,6 +93,11 @@ const ModalButtons = () => {
         <h3>ADVERTISING</h3>
       </div>
 
+      <div className="item">
+        <Image src={Phone} alt="GuySign" width={200} />
+        <h3>DIVERSITY</h3>
+      </div>
+
       <div
         className="item"
         onClick={() => {
