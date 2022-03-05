@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { SRLWrapper } from "simple-react-lightbox";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import FsLightbox from "fslightbox-react";
+import ReactPlayer from "react-player";
 
 export default function ExpressionGrid({ expression }) {
+  const [toggler, setToggler] = useState(false);
+
   const galleryVariant = {
     hidden: {
       opacity: 0,
@@ -44,20 +49,19 @@ export default function ExpressionGrid({ expression }) {
     },
   };
   return (
-    <SRLWrapper options={options}>
+    <div className="wrapper">
       <motion.div
         className="card"
         variants={galleryVariant}
         animate="visible"
         initial="hidden"
       >
-        <Image
-          className="grid-img"
-          src={"https:" + expression.fields.file.url}
-          width={500}
-          height={600}
-        />
+        <a onClick={() => setToggler(!toggler)}>HI</a>
       </motion.div>
-    </SRLWrapper>
+      <FsLightbox
+        toggler={toggler}
+        sources={["https:" + expression.fields.file.url]}
+      />
+    </div>
   );
 }

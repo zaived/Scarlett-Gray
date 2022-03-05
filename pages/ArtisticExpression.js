@@ -25,9 +25,9 @@ export default function ArtisticExpression({ expressions }) {
   console.log(expressions);
   return (
     <div>
-      <div className="expression-videos">
+      {/* <div className="expression-videos">
         <VideoExpressionGrid />
-      </div>
+      </div> */}
       <div className="expression-gallery">
         {expressions[0].fields.featuredwork.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
