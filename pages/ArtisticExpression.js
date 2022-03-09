@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
-import VideoExpressionGrid from "../comp/VideoExpressionGrid";
 import ExpressionGrid from "../comp/ExpressionGrid";
+
+//Connecting to contentful
 
 export async function getStaticProps() {
   //Interacts with contentful to grab data we need

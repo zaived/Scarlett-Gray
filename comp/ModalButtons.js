@@ -1,9 +1,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Guy from "../public/assets/icons/guy.gif";
-import Cart from "../public/assets/icons/cart.gif";
-import Phone from "../public/assets/icons/phone.gif";
+import Person from "../public/assets/icons/eoman.PNG";
+import Cart from "../public/assets/icons/cart.PNG";
+import Brain from "../public/assets/icons/brain.PNG";
+import Heart from "../public/assets/icons/heart.PNG";
+import Hands from "../public/assets/icons/hands.PNG";
+
 import AboutModal from "./Modals/AboutModal";
 import ContactModal from "./Modals/ContactModal";
 import ShopModal from "./Modals/ShopModal";
@@ -76,25 +79,25 @@ const ModalButtons = () => {
         }}
         className="item"
       >
-        <Image src={Guy} alt="GuySign" width={200} />
+        <Image src={Person} alt="GuySign" width={200} height={200} />
         <h3>STORY</h3>
       </motion.div>
 
       <div className="item">
         <Link href="/ArtisticExpression">
           <a>
-            <Image src={Cart} alt="GuySign" width={200} />
+            <Image src={Hands} alt="GuySign" width={200} height={200} />
             <h3>EXPRESSION</h3>
           </a>
         </Link>
       </div>
       <div className="item">
-        <Image src={Phone} alt="GuySign" width={200} />
+        <Image src={Brain} alt="GuySign" width={200} height={200} />
         <h3>ADVERTISING</h3>
       </div>
 
       <div className="item">
-        <Image src={Phone} alt="GuySign" width={200} />
+        <Image src={Heart} alt="GuySign" width={200} height={200} />
         <h3>DIVERSITY</h3>
       </div>
 
@@ -105,7 +108,7 @@ const ModalButtons = () => {
           open();
         }}
       >
-        <Image src={Phone} alt="GuySign" width={200} />
+        <Image src={Cart} alt="GuySign" width={200} height={200} />
         <h3>SHOP</h3>
       </div>
 
@@ -116,7 +119,7 @@ const ModalButtons = () => {
           open();
         }}
       >
-        <Image src={Phone} alt="GuySign" width={200} />
+        {/* <Image src={Phone} alt="GuySign" width={200} /> */}
         <h3>CONTACT</h3>
       </div>
 

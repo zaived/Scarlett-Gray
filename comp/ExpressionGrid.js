@@ -1,9 +1,7 @@
 import Image from "next/image";
-import { SRLWrapper } from "simple-react-lightbox";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import FsLightbox from "fslightbox-react";
-import ReactPlayer from "react-player";
 
 export default function ExpressionGrid({ expression }) {
   const [toggler, setToggler] = useState(false);
@@ -22,34 +20,6 @@ export default function ExpressionGrid({ expression }) {
     },
   };
 
-  // const galleryItems = {
-  //   hidden: {
-  //     y: 10,
-  //   },
-  //   visible: {
-  //     y: 0,
-  //     transition: {
-  //       delay: 1,
-  //       staggerChildren: 0.2,
-  //     },
-  //   },
-  // };
-
-  const options = {
-    buttons: {
-      backgroundColor: "rgba(30,30,36,0.8)",
-      iconColor: "rgba(255, 255, 255, 0.8)",
-      iconPadding: "10px",
-      showAutoplayButton: false,
-      showCloseButton: true,
-      showDownloadButton: false,
-      showFullscreenButton: true,
-      showNextButton: false,
-      showPrevButton: false,
-      showThumbnailsButton: false,
-      size: "40px",
-    },
-  };
   return (
     <div className="wrapper">
       <motion.div
@@ -59,16 +29,16 @@ export default function ExpressionGrid({ expression }) {
         initial="hidden"
       >
         <a onClick={() => setToggler(!toggler)}>
-          {/* <Image
+          <Image
             src={"https:" + thumbnail.fields.file.url}
             width={thumbnail.fields.file.details.image.width}
             height={thumbnail.fields.file.details.image.height}
-          /> */}
+          />
         </a>
       </motion.div>
       <FsLightbox
         toggler={toggler}
-        sources={["https:" + thumbnail.fields.file.url]}
+        sources={["https:" + featuredwork[0].fields.file.url]}
       />
     </div>
   );
