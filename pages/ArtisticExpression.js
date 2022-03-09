@@ -29,7 +29,7 @@ export default function ArtisticExpression({ expressions }) {
         <VideoExpressionGrid />
       </div> */}
       <div className="expression-gallery">
-        {expressions[0].fields.featuredwork.map((expression) => (
+        {expressions.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
         ))}
       </div>
