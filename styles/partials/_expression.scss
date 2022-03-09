@@ -8,12 +8,19 @@
   }
 }
 
-.expression-gallery {
-  margin-top: 4%;
-  display: grid;
-  grid-template-columns: 4fr 6fr 5fr;
-  grid-gap: 1.5rem;
+.expression-title {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
 
+.expression-gallery {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  column-gap: 1.5rem;
   justify-items: center;
   margin-bottom: 10%;
   padding: 0% 20%;

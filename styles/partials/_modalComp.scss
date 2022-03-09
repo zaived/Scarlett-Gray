@@ -1,7 +1,7 @@
 .modal-wrapper {
   position: fixed;
   top: 10%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
   z-index: 1000;
@@ -14,7 +14,6 @@
     text-align: center;
     h1 {
       display: inline-block;
-      font-family: "helvetica-blackregular";
       animation: blink ease infinite;
       animation-duration: 2s;
       cursor: pointer;

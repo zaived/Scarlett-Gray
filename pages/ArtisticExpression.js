@@ -23,12 +23,12 @@ export async function getStaticProps() {
 }
 
 export default function ArtisticExpression({ expressions }) {
-  console.log(expressions);
+  // console.log(expressions);
   return (
     <div>
-      {/* <div className="expression-videos">
-        <VideoExpressionGrid />
-      </div> */}
+      <div className="expression-title">
+        <h1> all this art has been created by my own hands</h1>
+      </div>
       <div className="expression-gallery">
         {expressions.map((expression) => (
           <ExpressionGrid key={expression.sys.id} expression={expression} />
