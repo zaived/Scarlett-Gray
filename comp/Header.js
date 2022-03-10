@@ -10,7 +10,7 @@ const Header = () => {
             <li>
               <Link href="/">
                 <a>
-                  <h1 className="h-name">Scarlett Gray</h1>
+                  <h1 className="h-name">Scarlett Rose ‎طنّوس Gray</h1>
                 </a>
               </Link>
             </li>

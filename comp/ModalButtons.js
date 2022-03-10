@@ -6,6 +6,7 @@ import Cart from "../public/assets/icons/cart.PNG";
 import Brain from "../public/assets/icons/brain.PNG";
 import Heart from "../public/assets/icons/heart.PNG";
 import Hands from "../public/assets/icons/hands.PNG";
+import Phone from "../public/assets/icons/phone.png";
 
 import AboutModal from "./Modals/AboutModal";
 import ContactModal from "./Modals/ContactModal";
@@ -119,7 +120,7 @@ const ModalButtons = () => {
           open();
         }}
       >
-        {/* <Image src={Phone} alt="GuySign" width={200} /> */}
+        <Image src={Phone} alt="GuySign" width={200} height={200} />
         <h3>CONTACT</h3>
       </div>
 
