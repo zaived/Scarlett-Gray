@@ -93,8 +93,12 @@ const ModalButtons = () => {
         </Link>
       </div>
       <div className="item">
-        <Image src={Brain} alt="GuySign" width={200} height={200} />
-        <h3>ADVERTISING</h3>
+        <Link href="/AdvertisingCampaigns">
+          <a>
+            <Image src={Brain} alt="GuySign" width={200} height={200} />
+            <h3>ADVERTISING</h3>
+          </a>
+        </Link>
       </div>
 
       <div className="item">
