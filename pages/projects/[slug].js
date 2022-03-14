@@ -42,21 +42,38 @@ export async function getStaticProps({ params }) {
   };
 }
 export default function ProjectDetails({ sProjects }) {
-  const [toggler, setToggler] = useState(false);
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
+
+  function openLightboxOnSlide(number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number,
+    });
+  }
   const { galleryContent, projectThumbnails, bodyText } = sProjects.fields;
   console.log(sProjects);
+
+  const gc = galleryContent.map((x) => "https:" + x.fields.file.url);
   return (
     <div className="p-gallery">
-      <a onClick={() => setToggler(!toggler)}>
-        <Image
-          src={"https:" + projectThumbnails[0].fields.file.url}
-          width={400}
-          height={400}
-        />
-      </a>
+      {projectThumbnails.map((pt, i) => {
+        return (
+          <a onClick={() => openLightboxOnSlide(i + 1)}>
+            <Image
+              src={"https:" + pt.fields.file.url}
+              width={400}
+              height={400}
+            />
+          </a>
+        );
+      })}
       <FsLightbox
-        toggler={toggler}
-        sources={["https:" + galleryContent[2].fields.file.url]}
+        toggler={lightboxController.toggler}
+        sources={gc}
+        slide={lightboxController.slide}
       />
       <div className="body-text">{documentToReactComponents(bodyText)}</div>
     </div>
