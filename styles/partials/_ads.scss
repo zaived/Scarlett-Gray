@@ -2,6 +2,19 @@
   margin-top: 10%;
   display: flex;
   justify-content: center;
+
+  img {
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.card-wrapper {
+  padding: 0% 2%;
+
+  .title {
+    text-align: center;
+  }
 }
 
 .p-gallery {
