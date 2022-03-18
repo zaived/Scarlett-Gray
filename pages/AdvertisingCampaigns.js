@@ -19,9 +19,11 @@ export default function AdvertisingCampaigns({ sProjects }) {
   // console.log(sProjects);
   return (
     <div className="ad-wrapper">
-      {sProjects.map((sProjects) => (
-        <ProjectCard key={sProjects.sys.id} sProjects={sProjects} />
-      ))}
+      <div className="ad-cards">
+        {sProjects.map((sProjects) => (
+          <ProjectCard key={sProjects.sys.id} sProjects={sProjects} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -59,22 +59,26 @@ export default function ProjectDetails({ sProjects }) {
   const gc = galleryContent.map((x) => "https:" + x.fields.file.url);
   return (
     <div className="p-gallery">
-      {projectThumbnails.map((pt, i) => {
-        return (
-          <a onClick={() => openLightboxOnSlide(i + 1)}>
-            <Image
-              src={"https:" + pt.fields.file.url}
-              width={400}
-              height={400}
-            />
-          </a>
-        );
-      })}
-      <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={gc}
-        slide={lightboxController.slide}
-      />
+      <div className="p-lightbox">
+        <div className="lightbox-content">
+          {projectThumbnails.map((pt, i) => {
+            return (
+              <a onClick={() => openLightboxOnSlide(i + 1)}>
+                <Image
+                  src={"https:" + pt.fields.file.url}
+                  width={400}
+                  height={400}
+                />
+              </a>
+            );
+          })}
+          <FsLightbox
+            toggler={lightboxController.toggler}
+            sources={gc}
+            slide={lightboxController.slide}
+          />
+        </div>
+      </div>
       <div className="body-text">{documentToReactComponents(bodyText)}</div>
     </div>
   );
