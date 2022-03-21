@@ -10,7 +10,6 @@ import Phone from "../public/assets/icons/phone.png";
 
 import AboutModal from "./Modals/AboutModal";
 import ContactModal from "./Modals/ContactModal";
-import ShopModal from "./Modals/ShopModal";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ModalButtons = () => {
@@ -26,10 +25,7 @@ const ModalButtons = () => {
       id: "about",
       modalContent: <AboutModal />,
     },
-    {
-      id: "shop",
-      modalContent: <ShopModal />,
-    },
+
     {
       id: "contact",
       modalContent: <ContactModal />,
@@ -60,8 +56,6 @@ const ModalButtons = () => {
         return <AboutModal handleClose={() => close()} />;
       } else if (currentModalId === "contact") {
         return <ContactModal handleClose={() => close()} />;
-      } else if (currentModalId === "shop") {
-        return <ShopModal handleClose={() => close()} />;
       } else {
         console.log("no id defined", currentModalId);
         return null;
@@ -102,18 +96,20 @@ const ModalButtons = () => {
       </div>
 
       <div className="item">
-        <Image src={Heart} alt="GuySign" width={200} height={200} />
-        <h3>DIVERSITY</h3>
+        <Link href="/Diversity">
+          <a>
+            <Image src={Heart} alt="GuySign" width={200} height={200} />
+            <h3>DIVERSITY</h3>
+          </a>
+        </Link>
       </div>
 
-      <div
-        className="item"
-        onClick={() => {
-          setCurrentModalId("shop");
-          open();
-        }}
-      >
-        <Image src={Cart} alt="GuySign" width={200} height={200} />
+      <div className="item">
+        <Link href="/Shop">
+          <a>
+            <Image src={Cart} alt="GuySign" width={200} height={200} />
+          </a>
+        </Link>
         <h3>SHOP</h3>
       </div>
 
