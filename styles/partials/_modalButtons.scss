@@ -31,6 +31,15 @@
   }
 }
 
+.contact-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+  h1 {
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .m-container {
     display: flex;

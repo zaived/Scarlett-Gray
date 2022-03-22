@@ -36,7 +36,9 @@ const ContactModal = ({ handleClose }) => {
         <div className="exit-btn">
           <h1 onClick={handleClose}>EXIT</h1>
         </div>
-        <h1>CONTACT MODAL</h1>
+        <div className="contact-text">
+          <h1>a.gray.scarlett@gmail.com</h1>
+        </div>
       </motion.div>
     </Backdrop>
   );
