@@ -36,6 +36,7 @@
 
 .body-text {
   padding: 0% 4%;
+  font-family: "Times New Roman", Times, serif !important;
 }
 
 .p-lightbox {
@@ -53,6 +54,7 @@
     margin-bottom: 5%;
   }
   img {
+    cursor: pointer;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
