@@ -59,6 +59,7 @@ export default function ProjectDetails({ sProjects }) {
   const gc = galleryContent.map((x) => "https:" + x.fields.file.url);
   return (
     <div className="p-gallery">
+      <div className="body-text">{documentToReactComponents(bodyText)}</div>
       <div className="p-lightbox">
         <div className="lightbox-content">
           {projectThumbnails.map((pt, i) => {
@@ -79,7 +80,6 @@ export default function ProjectDetails({ sProjects }) {
           />
         </div>
       </div>
-      <div className="body-text">{documentToReactComponents(bodyText)}</div>
     </div>
   );
 }
