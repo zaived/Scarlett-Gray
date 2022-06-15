@@ -64,7 +64,8 @@
 }
 
 @media (max-height: 1064px) {
-  .bio-p {
-    font-size: 13px;
+  .modal-wrapper .bio p {
+    line-height: 2em;
+    font-size: 12px;
   }
 }
