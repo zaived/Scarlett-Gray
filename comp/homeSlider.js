@@ -7,21 +7,21 @@ import Sculpt from "../public/assets/icons/home/4.jpg";
 
 const homeSlider = () => {
   return (
-    <div className="container">
+    <div className="slide-container">
       <section id="slideshow">
         <div class="entire-content">
           <div class="content-carrousel">
             <figure class="shadow">
-              <Image src={Zalando} width={200} />
+              <Image src={Zalando} />
             </figure>
             <figure class="shadow">
-              <Image src={Nike} width={200} />
+              <Image src={Nike} />
             </figure>
             <figure class="shadow">
-              <Image src={Painting} width={200} />
+              <Image src={Painting} />
             </figure>
             <figure class="shadow">
-              <Image src={Sculpt} width={200} />
+              <Image src={Sculpt} />
             </figure>
           </div>
         </div>

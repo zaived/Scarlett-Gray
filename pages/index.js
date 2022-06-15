@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.scss";
 import ModalButtons from "../comp/ModalButtons";
 import { useState } from "react";
 import Image from "next/image";
-import homeSlider from "../comp/homeSlider";
+import HomeSlider from "../comp/HomeSlider";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           </h2>
         </div>
       </div>
-      <homeSlider />
+      <HomeSlider />
     </div>
   );
 }
