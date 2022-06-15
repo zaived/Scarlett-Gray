@@ -62,3 +62,9 @@
     opacity: 1;
   }
 }
+
+@media (max-height: 1064px) {
+  .bio-p {
+    font-size: 13px;
+  }
+}
