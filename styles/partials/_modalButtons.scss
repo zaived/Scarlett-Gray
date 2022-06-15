@@ -58,3 +58,9 @@
     }
   }
 }
+
+@media (max-height: 779px) {
+  .item img {
+    height: 64px !important;
+  }
+}

@@ -72,3 +72,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 1064px) {
+  .p-gallery {
+    margin-top: 10% !important;
+  }
+}
