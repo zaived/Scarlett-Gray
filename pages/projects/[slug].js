@@ -64,7 +64,7 @@ export default function ProjectDetails({ sProjects }) {
         <div className="lightbox-content">
           {projectThumbnails.map((pt, i) => {
             return (
-              <a onClick={() => openLightboxOnSlide(i + 1)}>
+              <a key={i} onClick={() => openLightboxOnSlide(i + 1)}>
                 <Image
                   src={"https:" + pt.fields.file.url}
                   width={400}
