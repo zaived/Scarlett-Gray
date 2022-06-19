@@ -10,19 +10,19 @@ const homeSlider = () => {
     <div className='slide-container'>
       <section id='slideshow'>
         <div className='entire-content'>
-          <div className='content-carrousel'>
-            <figure className='shadow'>
+          <div className='content-carousel'>
+            <a className='shadow' href='/projects/zalando-createurs-doptimisme'>
               <Image src={Zalando} />
-            </figure>
-            <figure className='shadow'>
+            </a>
+            <a className='shadow' href='/projects/nike-all-star-weekend'>
               <Image src={Nike} />
-            </figure>
-            <figure className='shadow'>
-              <Image src={Painting} />
-            </figure>
-            <figure className='shadow'>
+            </a>
+            <a className='shadow' href='/ArtisticExpression'>
+              <Image src={Painting}/>
+            </a>
+            <a className='shadow' href='/ArtisticExpression'>
               <Image src={Sculpt} />
-            </figure>
+            </a>
           </div>
         </div>
       </section>
