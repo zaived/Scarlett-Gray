@@ -75,7 +75,7 @@ a {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1030px ), (max-height: 600px) {
   .layout-content {
     display: none;
   }

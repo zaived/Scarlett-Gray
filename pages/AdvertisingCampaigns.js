@@ -16,11 +16,11 @@ export async function getStaticProps() {
 }
 
 export default function AdvertisingCampaigns({ sProjects }) {
-  // console.log(sProjects);
+  console.log(sProjects);
   return (
     <div className="ad-wrapper">
       <div className="ad-cards">
-        {sProjects.map((sProjects) => (
+        {sProjects.sort((a, b) => {return b.fields.importance - a.fields.importance;}).map((sProjects) => (
           <ProjectCard key={sProjects.sys.id} sProjects={sProjects} />
         ))}
       </div>

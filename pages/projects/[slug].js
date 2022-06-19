@@ -67,8 +67,8 @@ export default function ProjectDetails({ sProjects }) {
               <a key={i} onClick={() => openLightboxOnSlide(i + 1)}>
                 <Image
                   src={"https:" + pt.fields.file.url}
-                  width={400}
-                  height={400}
+                  width={pt.fields.file.details.image.width}
+                  height={pt.fields.file.details.image.height}
                 />
               </a>
             );
