@@ -40,7 +40,7 @@ const ModalButtons = () => {
         <div
           key={id}
           onClick={() => {
-            setCurrrentModalId(id);
+            setCurrentModalId(id);
             open();
           }}
         ></div>
