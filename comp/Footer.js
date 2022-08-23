@@ -10,7 +10,7 @@ const Footer = () => {
           Artist - Hockey Player - Creative Director - Artist - Hockey Player -
           Creative Director - Artist - Hockey Player - Creative Director - Artist
           - Hockey Player Creative Director - Artist - Hockey Player - Creative
-          Director - Artist - Hockey Player -
+          Director - Artist - Hockey Player
         </p>
       </div>
     </div>
