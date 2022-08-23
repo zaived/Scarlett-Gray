@@ -16,9 +16,15 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in-out;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     img {
-      height: 9vh !important;
-      width: 9vh !important;
+      height: 8vh !important;
+      width: 8vh !important;
       filter: brightness(0%);
     }
     h3 {
